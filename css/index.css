@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -50,6 +49,9 @@ table {
 * {
     box-sizing: border-box;
 }
+html{
+    overflow-y: scroll;
+}
 
 html, body {
     height: 100%;
@@ -61,22 +63,46 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
-
 p {
     line-height: 1.4;
 }
-
 .container {
     width: 800px;
     margin: 0 auto;
 }
+header{
+    display:flex;
+    flex-direction: column;
+}
+.headerbar{
+    display:flex;
+    align-items: flex-end;
+    padding:2% 0 5% 0;
 
+}
+.logo{
+    margin-right: 2%;
+}
+nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.navlinks{
+    text-decoration: none;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    padding:4% 4% 0;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    padding-top: 2%;
 }
 
 .top-content .text-container {
@@ -104,12 +130,41 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#box1{
+    background:teal;
+}
+#box2{
+    background:gold;
+}
+#box3{
+    background:cadetblue;
+}
+#box4{
+    background:coral;
+}
+#box5{
+    background:crimson;
+}
+#box6{
+    background:forestgreen;
+}
+#box7{
+    background:darkorchid;
+}
+#box8{
+    background:hotpink;
+}
+#box9{
+    background:indigo;
+}
+#box10{
+    background:dodgerblue;
 }
 
 .bottom-content {
@@ -126,11 +181,42 @@ p {
     padding-right: 0;
 }
 
+.about-top{
+    padding: 3% 3%;
+    border-bottom: 1px dashed black;
+}
+.about-middle{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+.ab-middle-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 47%;
+    padding: 3% 0;
+    border-bottom: 1px dashed black;
+}
+.ab-middle-container h2{
+    padding-top:3%;
+}
+.ab-middle-container a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding:2% 6%;
+    margin: 5% 0 0;
+}
+.about-bottom{
+    padding: 5% 3%;
+}
 footer {
     width: 100%;
     background: black;
 }
-
 footer nav {
     width: 60%;
     display: flex;
@@ -139,7 +225,6 @@ footer nav {
     padding: 20px 2%;
     font-size: 14px;
 }
-
 footer nav a {
     color: white;
     text-decoration: none;
