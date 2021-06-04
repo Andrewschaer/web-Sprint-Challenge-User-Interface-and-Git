@@ -33,14 +33,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
+    #Using semantic HTML is a great way to provide context about you page for others reading your code.  Because HTML forms the outline of your webpage, it is a great place for others (or for yourself in the future) to turn in order to first orient themselves with how the page is structured.  Semantic HTML provides specific names for the core elements of your page, like header, nav, section, and footer - therefore providing way more context for others if you just used a div in their place.
 
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+    #Using either of these properties on an element will alter how much width the element will generally take up on your web page and how the element's neighboring elements will behave in relation to that element. A "display: block" element will take up the full width of your page and neighboring elements will begin on a separate line. A "display:inline" element will necessitate that it start on a new line and will only take up as much space as the content within the element.
 
 3. What are the 4 areas of the box model?
+    #Starting from the inside and going out: Content, Padding, Border, &  Margin
 
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
+    #It will align the flex items at the center of the cross-axis
 
 5. Explain why git is valuable to a team of developers.
+    #Git is valuable to a team of developers as it provides a system for version control during development.  Especially in collaborative development environments, version control is very important, and git helps keep old and new versions organized for reference and review.  Version control is also very important in development because it allows for easy roll-backs to previous versions if a new version becomes unstable or has a serious bug.  
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -49,12 +54,12 @@ You are expected to be able to answer all these questions. Your responses contri
 - [X] Create a forked copy of this project.
 - [X] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [X] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push -u origin `<firstName-lastName>`.
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [X] Push commits: git push -u origin `<firstName-lastName>`.
  
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 
 
 
